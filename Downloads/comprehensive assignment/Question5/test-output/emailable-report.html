@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Question5</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Question5 &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td>Program4Test</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1693924391846</td><td class="numi">81</td></tr>
+<tr><th colspan="5">Question5 &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td>Program4Test</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1693924391952</td><td class="numi">-1693924391952</td></tr>
+<tr><th colspan="5">Question5 &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">Program4Test</td><td><a href="#m3"><b>testSearchW3Schools</b>  </a></td><td class="numi">1</td><td>1693924391946</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m4"><b>testW3SchoolsLink</b>  </a></td><td class="numi">1</td><td>1693924391951</td><td class="numi">0</td></tr>
+</table>
+<h1>Question5</h1>
+<h2 id="m1">Program4Test:setUp</h2>
+<div>
+<div class="stacktrace">java.lang.NoClassDefFoundError: dev/failsafe/Policy
+	at org.openqa.selenium.remote.http.ClientConfig.&lt;clinit&gt;(ClientConfig.java:32)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at Program4Test.setUp(Program4Test.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: java.lang.ClassNotFoundException: dev.failsafe.Policy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 27 more
+... Removed 20 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Program4Test:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Program4Test:testSearchW3Schools</h2>
+<div>
+<div class="stacktrace">java.lang.NoClassDefFoundError: dev/failsafe/Policy
+	at org.openqa.selenium.remote.http.ClientConfig.&lt;clinit&gt;(ClientConfig.java:32)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
+	at Program4Test.setUp(Program4Test.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+Caused by: java.lang.ClassNotFoundException: dev.failsafe.Policy
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 27 more
+... Removed 20 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Program4Test:testW3SchoolsLink</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method Program4Test.testW3SchoolsLink()[pri:0, instance:Program4Test@4c40b76e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 15 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
