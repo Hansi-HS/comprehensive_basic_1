@@ -1,0 +1,17 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage extends BasePage {
+    @FindBy(linkText = "Contact")
+    private WebElement contactLink;
+
+    public HomePage(WebDriver driver) {
+        super(driver);
+    }
+
+    public void clickContactLink() {
+        contactLink.click();
+    }
+
+}
